@@ -23,7 +23,7 @@ resources:
   repositories:
   - repository: OpenAstronomy
     type: github
-    endpoint: sunpy
+    endpoint: odidev
     name: OpenAstronomy/azure-pipelines-templates
 
 trigger:
