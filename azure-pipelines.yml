@@ -67,7 +67,7 @@ stages:
             - wheels_cp310-macosx*
             - sdist
 
-  - ${{ if or(eq(variables['Build.Reason'], 'Schedule'), eq(variables['Build.Reason'], 'Manual')) }}:
+#  - ${{ if or(eq(variables['Build.Reason'], 'Schedule'), eq(variables['Build.Reason'], 'Manual')) }}:
     - stage: CronNotifier_OK
       condition: succeeded()
       dependsOn:
