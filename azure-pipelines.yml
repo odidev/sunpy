@@ -71,9 +71,6 @@ stages:
     - stage: CronNotifier_OK
       condition: succeeded()
       dependsOn:
-        - SecondPhaseTestsAllowedFail
-        - SecondPhaseTests
-        - CronTests
         - Release
       jobs:
       - job: notify
@@ -96,9 +93,6 @@ stages:
     - stage: CronNotifier_Fail
       condition: failed()
       dependsOn:
-        - SecondPhaseTestsAllowedFail
-        - SecondPhaseTests
-        - CronTests
         - Release
       jobs:
       - job: notify
