@@ -60,7 +60,9 @@ stages:
           submodules: false
           targets:
             - wheels_cp3[789]-manylinux*x86_64
-            - wheels_cp3[789]-manylinux*aarch64
+            - wheels_cp37-manylinux*aarch64
+            - wheels_cp38-manylinux*aarch64
+            - wheels_cp39-manylinux*aarch64
             - wheels_cp3[789]-macosx*
             - wheels_cp310-manylinux*x86_64
             - wheels_cp310-manylinux*aarch64
